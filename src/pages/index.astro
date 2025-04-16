@@ -20,33 +20,38 @@ import Projects from '../components/Projects.astro';
         <h1 class="text-left font-bold text-2xl md:text-2xl text-primary">Scott Quach</h1>
         <!-- <div class="text-left text-base md:text-xl text-gray-400">Digital Creator ( Engineer / Photographer )</div> -->
 
-        <section class="space-y-2 mb-5 mt-1">
-            <p class="text-left font-bold text-2xl md:text-3xl">
-                Product builder with a passion for everyday experiences. Focused on web and mobile development.
-                Photographer by night.
-            </p>
+        <div class="flex flex-col gap-5">
+            <section class="space-y-2 mb-5 mt-1">
+                <p class="text-left font-bold text-2xl md:text-3xl">
+                    Product builder with a passion for everyday experiences. Focused on web and mobile development.
+                    Photographer by night.
+                </p>
 
-            <p class="text-left text-base md:text-lg text-gray-500">
-                Principal Software Engineer at {' '}
-                <a
-                    class="hover:underline text-primary dark:text-primary-light font-medium"
-                    href="https://www.t-mobile.com"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    @T-Mobile
-                </a>
-            </p>
-        </section>
+                <p class="text-left text-base md:text-lg text-gray-500">
+                    Principal Software Engineer at {' '}
+                    <a
+                        class="hover:underline text-primary dark:text-primary-light font-medium"
+                        href="https://www.t-mobile.com"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        @T-Mobile
+                    </a>
+                </p>
+            </section>
 
-        <div class="text-sm text-gray-700 text-left mt-5 mb-2"># Blog</div>
+            <section>
+                <div class="text-2xl text-primary font-bold text-left mt-5 mb-2">Blog</div>
+            </section>
 
-        <div class="text-sm text-gray-700 text-left mt-5 mb-2"># Projects</div>
-        <Projects />
+            <section>
+                <div class="text-2xl text-primary font-bold text-left mt-5 mb-2">Projects</div>
+                <Projects />
+            </section>
 
-        <!-- <div class="text-sm text-gray-700 text-left mt-5 mb-2">Experience</div> -->
+            <!-- <div class="text-sm text-gray-700 text-left mt-5 mb-2">Experience</div> -->
 
-        <!-- <div class="text-xl text-left font-bold mt-5 mb-3">TL;DR</div>
+            <!-- <div class="text-xl text-left font-bold mt-5 mb-3">TL;DR</div>
         <div class="flex flex-col items-start mb-10 text-primary">
             <a href="/resume" class="flex gap-2 items-baseline font-medium">
                 <AppLink>
@@ -73,52 +78,55 @@ import Projects from '../components/Projects.astro';
             </a>
         </div> -->
 
-        <div class="text-sm text-gray-700 text-left mt-5 mb-2"># I too, am social</div>
-        <div class="flex flex-col items-start center-primary">
-            <a
-                class="flex gap-2 items-baseline font-medium"
-                href="https://github.com/scottquach"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <AppLink>
-                    <i class="fa-brands fa-github fa-fw"></i>
-                    <div>@scottquach</div>
-                </AppLink>
-            </a>
-            <a
-                class="flex gap-2 items-baseline font-medium"
-                href="https://www.linkedin.com/in/scott-quach/"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <AppLink>
-                    <i class="fa-brands fa-linkedin fa-fw"></i>
-                    <div>@scottquach</div>
-                </AppLink>
-            </a>
-            <a
-                class="flex gap-2 items-baseline font-medium"
-                href="https://www.instagram.com/jpg.by.scottq/"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <AppLink>
-                    <i class="fa-brands fa-instagram fa-fw"></i>
-                    <div>@jpg.by.scottq</div>
-                </AppLink>
-            </a>
-            <a
-                class="flex gap-2 items-baseline font-medium"
-                href="https://www.youtube.com/@jpegs-by-scott/shorts"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <AppLink>
-                    <i class="fa-brands fa-youtube fa-fw"></i>
-                    <div>@jpegs-by-scott</div>
-                </AppLink>
-            </a>
+            <section>
+                <div class="text-2xl text-primary font-bold text-left mt-5 mb-2">I too, am social</div>
+                <div class="flex flex-col items-start center-primary">
+                    <a
+                        class="flex gap-2 items-baseline font-medium"
+                        href="https://github.com/scottquach"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <AppLink>
+                            <i class="fa-brands fa-github fa-fw"></i>
+                            <div>@scottquach</div>
+                        </AppLink>
+                    </a>
+                    <a
+                        class="flex gap-2 items-baseline font-medium"
+                        href="https://www.linkedin.com/in/scott-quach/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <AppLink>
+                            <i class="fa-brands fa-linkedin fa-fw"></i>
+                            <div>@scottquach</div>
+                        </AppLink>
+                    </a>
+                    <a
+                        class="flex gap-2 items-baseline font-medium"
+                        href="https://www.instagram.com/jpg.by.scottq/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <AppLink>
+                            <i class="fa-brands fa-instagram fa-fw"></i>
+                            <div>@jpg.by.scottq</div>
+                        </AppLink>
+                    </a>
+                    <a
+                        class="flex gap-2 items-baseline font-medium"
+                        href="https://www.youtube.com/@jpegs-by-scott/shorts"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <AppLink>
+                            <i class="fa-brands fa-youtube fa-fw"></i>
+                            <div>@jpegs-by-scott</div>
+                        </AppLink>
+                    </a>
+                </div>
+            </section>
         </div>
     </main>
 </BaseLayout>
