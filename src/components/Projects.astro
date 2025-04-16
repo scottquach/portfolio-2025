@@ -1,0 +1,44 @@
+---
+const projects = [
+    {
+        name: 'Flow Journal',
+        technologies: ['Next.js', 'AI', 'Vercel', 'Neon DB'],
+        description: 'Think It. Write It. Go. A journal meant for writing, not editing.',
+        link: 'https://www.flowjournalapp.com/',
+    },
+    {
+        name: 'Bill Split AI',
+        technologies: ['React', 'AI', 'Cloudflare'],
+        description: 'Split your restaurant bill using plain English and AI.',
+        link: 'https://billsplitai.com/',
+    },
+    {
+        name: 'Make a Meal',
+        technologies: ['React', 'AI', 'Cloudflare'],
+        description: 'Convert any Instagram Reel recipe into markdown.',
+        link: 'https://make-a-meal-app.pages.dev/',
+    },
+    {
+        name: 'Garmin Wrapped',
+        technologies: ['React', 'Remix', 'Cloudflare'],
+        description: 'Generates insights, summary, and visualizations of your Garmin data for a year in review.',
+        link: 'https://garminwrapped.com/',
+    },
+];
+---
+
+<div class="flex flex-col gap-4">
+    {
+        projects.map((project) => (
+            <a href={project.link} target="_blank" rel="noreferrer" class="group">
+                <section class="flex flex-col gap-0.5">
+                    <div class="flex items-center gap-1">
+                        <h3 class=" font-bold group-hover:underline">{project.name}</h3>
+                    </div>
+                    <p class="text-sm font-medium text-gray-500">{project.description}</p>
+                    <p class="text-xs font-medium text-primary">{project.technologies.join(', ')}</p>
+                </section>
+            </a>
+        ))
+    }
+</div>

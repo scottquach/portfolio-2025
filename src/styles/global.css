@@ -2,18 +2,13 @@
 
 body {
     margin: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
     font-family: 'Inter', sans-serif;
 
-    /* background-color: #ece7dd;
-    color: #2f3843; */
+    background-color: #fafafa;
+    color: #2f3843;
 
-    background-color: #19191b;
-    color: #ffffff;
-    width: 100%;
+    /* background-color: #19191b;
+    color: #ffffff; */
 }
 
 code {
@@ -29,6 +24,7 @@ main {
     margin: 0 auto;
     padding-top: 4rem;
     flex: 1;
+    overflow-x: hidden;
 }
 
 .profile-image {
@@ -52,6 +48,25 @@ main {
 .dark .divider {
     border-top: 2px solid whitesmoke;
 }
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 8rem auto;
+    justify-items: start;
+    row-gap: 2rem;
+    column-gap: 1rem;
+}
+
+/* Manual tailwind dark toggle */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-primary: var(--color-primary);
+    --color-secondary: var(--color-secondary);
+    --color-primary-light: var(--color-primary-light);
+    --color-secondary-light: var(--color-secondary-light);
+}
+
 :root {
     --color-primary: #0b7189;
     --color-secondary: rgb(11, 113, 137, 0.2);
