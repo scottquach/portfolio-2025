@@ -1,11 +1,137 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AppLink from '../components/AppLink.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import profile from '../assets/profile.jpg';
+import { Image } from 'astro:assets';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout>
+    <main class="flex flex-col w-full h-full flex-1">
+        <div class="flex justify-left gap-7">
+            <Image src={profile} alt="Profile" class="profile-image" />
+            <div class="flex flex-col items-start">
+                <header class="text-3xl md:text-4xl font-bold">Scott Quach</header>
+                <div class="text-left text-base md:text-xl opacity-90">Digital Creator ( Engineer / Photographer )</div>
+            </div>
+        </div>
+
+        <p class="text-left mt-10 mb-4">
+            Principle Software Engineer{' '}
+            <a
+                class="text-primary hover:underline dark:text-primary-light font-medium underline"
+                href="https://www.t-mobile.com"
+                target="_blank"
+                rel="noreferrer"
+            >
+                @T-Mobile
+            </a>
+            .
+        </p>
+
+        <p class="text-left mb-10">
+            Building enterprise leading data platforms and tools since 2018 - Before that did some native Android work
+            at{' '}
+            <a
+                class="text-primary hover:underline dark:text-primary-light font-medium underline"
+                href="https://www.accolade.com"
+                target="_blank"
+                rel="noreferrer"
+            >
+                @Accolade
+            </a>{' '}
+            - Here's a{' '}
+            <a
+                href="/resume"
+                class="text-primary cursor-pointer hover:underline dark:text-primary-light font-medium underline"
+            >
+                résumé
+            </a>{' '}
+            for the curious - I moonlight as a Photographer, you can find my work{' '}
+            <a
+                class="text-primary hover:underline dark:text-primary-light font-medium underline"
+                href="https://www.instagram.com/jpg.by.scottq/"
+                target="_blank"
+                rel="noreferrer"
+            >
+                here
+            </a>
+            .
+        </p>
+
+        <div class="text-xl text-left font-bold my-5">TL;DR</div>
+        <div class="flex flex-col items-start mb-10 text-primary">
+            <AppLink>
+                <a href="/resume" class="flex gap-2 items-baseline font-medium">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Résumé</span>
+                </a>
+            </AppLink>
+            <AppLink>
+                <a href="/projects" class="flex gap-2 items-baseline font-medium">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span>Projects</span>
+                </a>
+            </AppLink>
+            <AppLink>
+                <a
+                    href="https://www.instagram.com/jpg.by.scottq/"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="flex gap-2 items-baseline font-medium"
+                >
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <div class="font-medium">Photography</div>
+                </a>
+            </AppLink>
+        </div>
+
+        <div class="text-xl text-left font-bold my-5">I too, am social</div>
+        <div class="flex flex-col items-start center-primary">
+            <AppLink>
+                <a
+                    class="flex gap-2 items-baseline font-medium"
+                    href="https://github.com/scottquach"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <i class="fa-brands fa-github fa-fw"></i>
+                    <div>@scottquach</div>
+                </a>
+            </AppLink>
+            <AppLink>
+                <a
+                    class="flex gap-2 items-baseline font-medium"
+                    href="https://www.linkedin.com/in/scott-quach/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <i class="fa-brands fa-linkedin fa-fw"></i>
+                    <div>@scottquach</div>
+                </a>
+            </AppLink>
+            <AppLink>
+                <a
+                    class="flex gap-2 items-baseline font-medium"
+                    href="https://www.instagram.com/jpg.by.scottq/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <i class="fa-brands fa-instagram fa-fw"></i>
+                    <div>@jpg.by.scottq</div>
+                </a>
+            </AppLink>
+            <AppLink>
+                <a
+                    class="flex gap-2 items-baseline font-medium"
+                    href="https://www.youtube.com/@jpegs-by-scott/shorts"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <i class="fa-brands fa-youtube fa-fw"></i>
+                    <div>@jpegs-by-scott</div>
+                </a>
+            </AppLink>
+        </div>
+    </ma>
+</BaseLayout>

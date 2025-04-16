@@ -1,0 +1,41 @@
+---
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+const { title = 'Scott Quach' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/ico" href="/favicon.ico" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="description" content="Scott Quach - Software Engineer and Photographer" />
+        <title>{title}</title>
+
+        <!-- Preconnect to External Resources -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+            rel="preload"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap"
+            rel="preload"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
+    </head>
+    <body>
+        <slot />
+        <Footer />
+    </body>
+</html>
+
+<style></style>

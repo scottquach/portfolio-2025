@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+
+    /* background-color: #ece7dd;
+    color: #2f3843; */
+
+    background-color: #19191b;
+    color: #ffffff;
+    width: 100%;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 42rem;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 4rem;
+    flex: 1;
+}
+
+.profile-image {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    border: #e4e4e7;
+    border-width: 2px;
+    border-style: solid;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.divider {
+    border-top: 2px solid whitesmoke;
+    opacity: 0.1;
+    width: 6rem;
+    /* width: 0rem; */
+    margin: 2.25rem 0;
+}
+
+.dark .divider {
+    border-top: 2px solid whitesmoke;
+}
+:root {
+    --color-primary: #0b7189;
+    --color-secondary: rgb(11, 113, 137, 0.2);
+    /* --color-primary-light: #a7d4ff; */
+    --color-primary-light: #73ecc8;
+    --color-secondary-light: rgb(181, 234, 255, 0.25);
+}
