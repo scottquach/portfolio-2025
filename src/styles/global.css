@@ -27,6 +27,14 @@ main {
     overflow-x: hidden;
 }
 
+p a {
+    color: var(--color-primary);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .profile-image {
     width: 4.5rem;
     height: 4.5rem;
