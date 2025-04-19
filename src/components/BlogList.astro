@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+
+const allBlogPosts = await getCollection('blog');
+---
+
+<div class="flex flex-col gap-5">
+    {
+        allBlogPosts.map((post) => (
+            <a class="flex gap-3 group" href={`posts/${post.id}`} target="_blank" rel="noreferrer">
+                <span class="text-gray-500">{post.data.date}</span>
+                <span class="font-medium group-hover:underline">{post.data.title}</span>
+            </a>
+        ))
+    }
+</div>

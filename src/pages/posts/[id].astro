@@ -1,0 +1,24 @@
+---
+import '../../styles/global.css';
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogLayout from '../../layouts/BlogLayout.astro';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+    const posts = await getCollection('blog');
+    return posts.map((post) => ({
+        params: { id: post.id },
+        props: { post },
+    }));
+}
+
+// 2. For your template, you can get the entry directly from the prop
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BlogLayout>
+    <div class="text-gray-500">{post.data.date}</div>
+    <h1 class="text-4xl font-medium mb-10 mt-2">{post.data.title}</h1>
+    <Content />
+</BlogLayout>

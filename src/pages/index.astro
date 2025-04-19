@@ -1,15 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import AppLink from '../components/AppLink.astro';
-
-import profile from '../assets/profile.jpg';
-import { Image } from 'astro:assets';
 import Projects from '../components/Projects.astro';
-import Blogs from '../components/Blogs.astro';
+import Blogs from '../components/BlogList.astro';
 ---
 
 <BaseLayout>
-    <main class="flex flex-col w-full h-full flex-1 grow">
+    <main class="flex flex-col w-full h-full flex-1 grow pb-40">
         <!-- <div class="flex justify-left gap-7">
             <Image src={profile} alt="Profile" class="profile-image" />
             <div class="flex flex-col items-start">
@@ -42,22 +38,17 @@ import Blogs from '../components/Blogs.astro';
             </section>
 
             <section>
-                <div class="text-sm text-primary font-bold text-left mt-5 mb-4">Today I thought</div>
+                <div class="text-sm text-primary font-bold text-left mt-5 mb-5">Today I thought</div>
                 <Blogs />
             </section>
 
             <section>
-                <div class="text-sm text-primary font-bold text-left mt-5 mb-4">Startups... ok side projects</div>
+                <div class="text-sm text-primary font-bold text-left mt-5 mb-5">Startups... ok side projects</div>
                 <Projects />
             </section>
 
-            <!-- <section>
-                <div class="text-sm text-primary font-bold text-left mt-5 mb-4">BLOGS</div>
-                <Projects />
-            </section> -->
-
             <section>
-                <div class="text-sm text-primary font-bold text-left mt-5 mb-4">Say hello</div>
+                <div class="text-sm text-primary font-bold text-left mt-5 mb-5">Say hello</div>
                 <p>
                     Explore my work on <a
                         href="https://www.linkedin.com/in/scott-quach/"
@@ -65,95 +56,11 @@ import Blogs from '../components/Blogs.astro';
                         rel="noreferrer">LinkedIn</a
                     > or <a href="https://github.com/scottquach" target="_blank" rel="noreferrer">Github</a>.
                     <br />
-                    Checkout my creative side on
+                    Checkout my photography on
                     <a href="https://www.instagram.com/jpg.by.scottq/" target="_blank" rel="noreferrer">Instagram</a>
-                    or <a href="https://www.youtube.com/@scott-quach" target="_blank" rel="noreferrer">YouTube</a>.
+                    <!-- or <a href="https://www.youtube.com/@scott-quach" target="_blank" rel="noreferrer">YouTube</a>. -->
                 </p>
-
-                <!-- <Projects /> -->
             </section>
-
-            <!-- <div class="text-sm text-gray-700 text-left mt-5 mb-2">Experience</div> -->
-
-            <!-- <div class="text-xl text-left font-bold mt-5 mb-3">TL;DR</div>
-        <div class="flex flex-col items-start mb-10 text-primary">
-            <a href="/resume" class="flex gap-2 items-baseline font-medium">
-                <AppLink>
-                    <i class="fa-solid fa-briefcase"></i>
-                    <span>Résumé</span>
-                </AppLink>
-            </a>
-            <a href="/projects" class="flex gap-2 items-baseline font-medium">
-                <AppLink>
-                    <i class="fa-solid fa-screwdriver-wrench"></i>
-                    <span>Projects</span>
-                </AppLink>
-            </a>
-            <a
-                href="https://www.instagram.com/jpg.by.scottq/"
-                target="_blank"
-                rel="noreferrer"
-                class="flex gap-2 items-baseline font-medium"
-            >
-                <AppLink>
-                    <i class="fa-solid fa-camera-retro"></i>
-                    <div class="font-medium">Photography</div>
-                </AppLink>
-            </a>
-        </div> -->
-
-            <!-- <section>
-                <div class="text-2xl text-primary font-bold text-left mt-5 mb-2">I too, am social</div>
-                <div class="flex flex-col items-start center-primary">
-                    <a
-                        class="flex gap-2 items-baseline font-medium"
-                        href="https://github.com/scottquach"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <AppLink>
-                            <i class="fa-brands fa-github fa-fw"></i>
-                            <div>@scottquach</div>
-                        </AppLink>
-                    </a>
-                    <a
-                        class="flex gap-2 items-baseline font-medium"
-                        href="https://www.linkedin.com/in/scott-quach/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <AppLink>
-                            <i class="fa-brands fa-linkedin fa-fw"></i>
-                            <div>@scottquach</div>
-                        </AppLink>
-                    </a>
-                    <a
-                        class="flex gap-2 items-baseline font-medium"
-                        href="https://www.instagram.com/jpg.by.scottq/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <AppLink>
-                            <i class="fa-brands fa-instagram fa-fw"></i>
-                            <div>@jpg.by.scottq</div>
-                        </AppLink>
-                    </a>
-                    <a
-                        class="flex gap-2 items-baseline font-medium"
-                        href="https://www.youtube.com/@jpegs-by-scott/shorts"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <AppLink>
-                            <i class="fa-brands fa-youtube fa-fw"></i>
-                            <div>@jpegs-by-scott</div>
-                        </AppLink>
-                    </a>
-                </div>
-            </section>
-        </div>
-    </main>
-</BaseLayout> -->
         </div>
     </main></BaseLayout
 >
