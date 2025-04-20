@@ -20,6 +20,8 @@ Without a solid plan, both a book and a software project risk becoming disorgani
 
 ## Drafting and Iteration
 
+> Some things aren't meant to last
+
 The first draft of a novel is rarely perfect, and neither is the initial version of a software feature. Both require iterative refinement.
 
 1.  **Writing:** Draft, revise, edit, proofread. Get feedback from beta readers.
