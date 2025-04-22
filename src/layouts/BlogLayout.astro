@@ -11,8 +11,9 @@ const { Content, headings } = await render(post);
 
 <BaseLayout>
     <div class="w-full flex justify-center">
-        <div class="max-w-[42rem] py-10">
-            <h1 class="text-4xl font-bold">{post.data.title}</h1>
+        <div class="w-[44rem] pt-5 px-4 pb-52">
+            <a href="/" class="text-gray-500 text-sm hover:underline text-primary">Home</a>
+            <h1 class="text-4xl font-bold mt-8">{post.data.title}</h1>
             <div class="text-gray-500 mb-10 mt-2 font-mono">
                 {format(new Date(post.data.date), 'MMMM yyyy')} in <span class="bg-gray-200 px-1 py-0.5 rounded"
                     >{post.data.category}</span

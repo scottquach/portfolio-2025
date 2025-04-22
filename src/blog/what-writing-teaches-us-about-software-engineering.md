@@ -5,8 +5,6 @@ title: Lessons writing a book can teach software engineers
 date: '2024-04-17'
 ---
 
-## Introduction
-
 Have you ever considered the parallels between crafting elegant code and writing a compelling novel? At first glance, they might seem worlds apart. One involves logic, algorithms, and syntax, while the other deals with narrative, characters, and prose. However, digging deeper reveals surprising similarities in the processes, challenges, and skills required for both disciplines.
 
 ## Planning and Outlining
