@@ -1,18 +1,18 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: "Geist", sans-serif;
 
     background-color: #fafafa;
-    color: #2f3843;
+    color: #1f271b;
 
     /* background-color: #19191b;
     color: #ffffff; */
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 main {
