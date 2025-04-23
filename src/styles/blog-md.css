@@ -32,7 +32,11 @@
         font-size: 1.4rem;
     }
 
-    a {
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+    /* a {
         color: blue;
         text-decoration: none;
         border-bottom: 1px solid transparent;
@@ -41,7 +45,7 @@
 
     a:hover {
         border-bottom: 1px solid blue;
-    }
+    } */
 
     /* Blockquotes */
     blockquote {
@@ -76,11 +80,11 @@
         counter-increment: list-counter;
         position: relative;
         padding-left: 1.25rem;
-        margin-bottom: .25rem;
+        margin-bottom: 0.25rem;
     }
 
     ol > li::before {
-        content: counter(list-counter) '.';
+        content: counter(list-counter) ".";
         position: absolute;
         left: 0;
         font-weight: 600;
@@ -97,11 +101,11 @@
     ul > li {
         position: relative;
         padding-left: 1.25rem;
-        margin-bottom: .25rem;
+        margin-bottom: 0.25rem;
     }
 
     ul > li::before {
-        content: '•';
+        content: "•";
         position: absolute;
         left: 0;
         color: var(--accent-color);
