@@ -12,7 +12,11 @@ const { Content, headings } = await render(post);
 <BaseLayout title={post.data.title}>
     <div class="w-full flex justify-center">
         <div class="w-[44rem] pt-5 px-4 pb-52">
-            <a href="/" class="text-sm hover:underline text-primary">Home</a>
+            <div class="flex items-center gap-7">
+                <h1 class="text-left text-lg font-semibold text-primary">Scott Quach</h1>
+                <a href="/" class="text-sm hover:underline">Home</a>
+            </div>
+
             <h1 class="text-3xl md:text-4xl font-semibold mt-8">{post.data.title}</h1>
             <div class="text-gray-500 mb-10 mt-2">
                 {format(new Date(post.data.date), 'MMMM yyyy')} in <span class="bg-gray-100 px-1 py-0.5 rounded"
