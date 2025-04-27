@@ -6,9 +6,6 @@ body {
 
     background-color: #fafafa;
     color: #1f271b;
-
-    /* background-color: #19191b;
-    color: #ffffff; */
 }
 
 code {
@@ -65,7 +62,6 @@ p a {
     column-gap: 1rem;
 }
 
-/* Manual tailwind dark toggle */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -79,6 +75,13 @@ p a {
     --color-primary: #0b7189;
     --color-secondary: rgb(11, 113, 137, 0.2);
     /* --color-primary-light: #a7d4ff; */
-    --color-primary-light: #73ecc8;
+    /* --color-primary-light: #73ecc8; */
     --color-secondary-light: rgb(181, 234, 255, 0.25);
+}
+
+.dark {
+    background-color: #1a1818;
+    color: #f3f3f3;
+
+    --color-primary: #73ecc8;
 }

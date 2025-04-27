@@ -1,114 +1,118 @@
-.prose {
-    /* h1 {
-        font-size: 2.25rem;
-        font-weight: 500;
-    } */
+/* h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+} */
 
-    p {
-        font-size: 18px;
-    }
+.prose p {
+    font-size: 18px;
+}
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin-top: 2.5rem;
-        margin-bottom: 1rem;
-        font-weight: 600;
-        line-height: 1.25;
-    }
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
 
-    h1 {
-        font-size: 2.25rem;
-    }
+.prose h1 {
+    font-size: 2.25rem;
+}
 
-    h2 {
-        font-size: 1.8rem;
-    }
+.prose h2 {
+    font-size: 1.8rem;
+}
 
-    h3 {
-        font-size: 1.4rem;
-    }
+.prose h3 {
+    font-size: 1.4rem;
+}
 
-    p {
-        margin-bottom: 1.5rem;
-    }
+.prose p {
+    margin-bottom: 1.5rem;
+}
 
-    /* a {
-        color: blue;
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        transition: border-color 0.2s ease;
-    }
+/* .prose a {
+    color: blue;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
 
-    a:hover {
-        border-bottom: 1px solid blue;
-    } */
+.prose a:hover {
+    border-bottom: 1px solid blue;
+} */
 
-    /* Blockquotes */
-    blockquote {
-        margin: 2rem 0 2rem 0;
-        margin-left: 0;
-        padding-left: 1rem;
-        border-left: 2px solid black;
-        color: #2f3843;
-        /* font-style: italic; */
-    }
+/* Blockquotes */
+.prose blockquote {
+    margin: 2rem 0 2rem 0;
+    margin-left: 0;
+    padding-left: 1rem;
+    border-left: 2px solid black;
+    color: #2f3843;
+    /* font-style: italic; */
+}
 
-    /* Lists */
-    ul,
-    ol {
-        padding-left: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
+/* Dark mode blockquote */
+.dark .prose blockquote {
+    border-left: 2px solid #acacac;
+    color: #acacac;
+}
 
-    li {
-        margin-bottom: 0.5rem;
-    }
+/* Lists */
+.prose ul,
+.prose ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
 
-    /* Numbered lists with custom styling */
-    ol {
-        counter-reset: list-counter;
-        list-style-type: none;
-        padding-left: 0;
-        margin: 1rem 0 1rem 0;
-    }
+.prose li {
+    margin-bottom: 0.5rem;
+}
 
-    ol > li {
-        counter-increment: list-counter;
-        position: relative;
-        padding-left: 1.25rem;
-        margin-bottom: 0.25rem;
-    }
+/* Numbered lists with custom styling */
+.prose ol {
+    counter-reset: list-counter;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1rem 0 1rem 0;
+}
 
-    ol > li::before {
-        content: counter(list-counter) ".";
-        position: absolute;
-        left: 0;
-        font-weight: 600;
-        color: var(--accent-color);
-    }
+.prose ol > li {
+    counter-increment: list-counter;
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.25rem;
+}
 
-    /* Bullet lists with custom styling */
-    ul {
-        list-style-type: none;
-        padding-left: 0;
-        margin: 1rem 0 1rem 0;
-    }
+.prose ol > li::before {
+    content: counter(list-counter) ".";
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+    color: var(--accent-color);
+}
 
-    ul > li {
-        position: relative;
-        padding-left: 1.25rem;
-        margin-bottom: 0.25rem;
-    }
+/* Bullet lists with custom styling */
+.prose ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1rem 0 1rem 0;
+}
 
-    ul > li::before {
-        content: "•";
-        position: absolute;
-        left: 0;
-        color: var(--accent-color);
-        font-weight: bold;
-    }
+.prose ul > li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.prose ul > li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
 }

@@ -18,8 +18,8 @@ const { Content, headings } = await render(post);
             </div>
 
             <h1 class="text-3xl md:text-4xl font-semibold mt-8">{post.data.title}</h1>
-            <div class="text-gray-500 mb-10 mt-2">
-                {format(new Date(post.data.date), 'MMMM yyyy')} in <span class="bg-gray-100 px-1 py-0.5 rounded"
+            <div class="text-gray-500 dark:text-gray-400 mb-10 mt-2">
+                {format(new Date(post.data.date), 'MMMM yyyy')} in <span class="bg-gray-100 dark:bg-neutral-800 px-1 py-0.5 rounded"
                     >{post.data.category}</span
                 >
             </div>

@@ -14,7 +14,7 @@ const publishedBlogs = allBlogPosts.filter((post) => post.data.status === 'publi
                 {index > 0 && <div class="h-px w-full bg-gray-200" />}
                 <a class="flex gap-4 group justify-between" href={`blog/${post.id}`} rel="noreferrer">
                     <span class="font-medium group-hover:underline ">{post.data.title}</span>
-                    <span class="text-gray-400 text-sm hidden md:block">
+                    <span class="text-gray-500 dark:text-gray-400 text-sm hidden md:block">
                         {format(new Date(post.data.date), 'MMMM yyyy')}
                     </span>
                     {/* <span class="text-gray-400 text-sm">{post.data.category}</span> */}
