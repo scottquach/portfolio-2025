@@ -1,4 +1,5 @@
 ---
+import Posthog from '../components/Posthog.astro';
 import '../styles/global.css';
 const { title = 'Scott Quach' } = Astro.props;
 ---
@@ -79,6 +80,7 @@ const { title = 'Scott Quach' } = Astro.props;
     </head>
     <body>
         <slot />
+        <Posthog />
         <!-- <Footer /> -->
     </body>
 
