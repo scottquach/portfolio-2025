@@ -1,1 +1,1 @@
-www.scottquach.com
+https://scottquach.com/
