@@ -39,7 +39,7 @@ All content for this blog is generated via standard markdown files and eventuall
 
 For the 2025 site I decided to use [Astro](https://astro.build/) as my JS framework of choice. The driving factor for me to use Astro instead of something such as Next.js was two fold
 
-- Next.js can at times feel a bit overly cluttered with more advanced features (even though they, are optional they still persist throughout the documentation, etc. )
+- Next.js can at times feel a bit overly cluttered with more advanced features (even though they are optional, it takes mental space to ignore)
 - Astro has built in solution for content generation on top of markdown
 
 The Astro Content Layer specifically interested me for it's ability to generate pre-rendered html pages from plain markdown. Making it seamless for maintaining and creating new posts simply by adding a new md file in a specified directory.

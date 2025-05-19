@@ -5,47 +5,68 @@ title: Lessons writing a book can teach software engineers
 date: '2024-04-17'
 ---
 
-Have you ever considered the parallels between crafting elegant code and writing a compelling novel? At first glance, they might seem worlds apart. One involves logic, algorithms, and syntax, while the other deals with narrative, characters, and prose. However, digging deeper reveals surprising similarities in the processes, challenges, and skills required for both disciplines.
+Building software products is hard. Building software products that people actually use is even harder.
 
-## Planning and Outlining
+In this series, I’ll explore common failures in software product development and how the process of writing a book can help explain why they happen and how to fix them. These failures often come from the technical, jargon-heavy nature of software engineering, which leads non-technical stakeholders and management to misunderstand how software is actually built.
 
-Just as an author outlines chapters and plot points before writing, a software engineer designs architectures and defines components before coding.
+The most common ways I see this misunderstanding manifest itself is through how organizations _manage_ software development.
 
--   **Author:** Creates character sketches, plot outlines, world-building notes.
--   **Engineer:** Develops system diagrams, API contracts, database schemas.
+## The manufacturing mindset
 
-Without a solid plan, both a book and a software project risk becoming disorganized, inconsistent, and difficult to navigate. A good outline provides a roadmap, ensuring all pieces fit together coherently.
+The way most non-technical organizations address this misunderstanding is to treat software development like manufacturing. Roadmaps are defined, broken down into standardized tickets _(cough cough shoutout to Jira)_, assigned requirements and effort estimations, and expected to be completed in repeatable two-week intervals. This approach attempts to simplify the complexity of software engineering into a seemingly easy to understand assembly-line like manufacturing process. It assumes:
 
-## Drafting and Iteration
+- More developers means more productivity, a developer is interchangeable with another
+- Output quality is an outcome of processes standardization and adherence
+- Requirements can be fully defined upfront
+- Tasks can be broken down into predictable units of work
+- Progress can be measured via points completed on a chart
 
-> Some things aren't meant to last
+This mindset treats software engineers like factory workers assembling components, when the reality is the majority software work is more similar to creative professions such as writing. And while on paper these assumptions can seemingly benefit management by providing a clearer understanding of work in progress, resource constraints, etc. This mindset this mindset is often the creator of process-driven bottlenecks.
 
-The first draft of a novel is rarely perfect, and neither is the initial version of a software feature. Both require iterative refinement.
+A better mindset would be to think of software development akin to writing. 
 
-1.  **Writing:** Draft, revise, edit, proofread. Get feedback from beta readers.
-2.  **Coding:** Write initial code, test, refactor, debug. Get feedback through code reviews.
+## Coding is really just writing 
 
-This iterative cycle is crucial for polishing the final product, whether it's eliminating plot holes or fixing bugs.
+Coding, at the end of the day, is opinionated sets of text saved to files. If we compare writing a book to software development we can correlate a lot of roles. 
 
-## Collaboration and Review
+- Author = Software engineer
+- Editor = Code reviewers
+- Publisher = Management
+- Readers = Users
+- Book = Piece of software
+- Chapters = Features of a software 
+- Book series = Interconnected software
+- Writing = Coding
 
-Few authors publish without an editor, and few engineers ship code without reviews. Feedback is essential.
+Strip away the technical pieces and you'll find similar patterns of creation, review, and delivery. Just as authors craft a narrative by building out chapters and fitting them together into a cohesive story, software engineers write features that come together to create a cohesive experience for end users. 
 
--   **Editors/Beta Readers:** Check for clarity, consistency, pacing, and engagement.
--   **Code Reviewers:** Check for correctness, efficiency, maintainability, and adherence to standards.
+Keeping this framework in mind, we will be able to more easily identify common software development that are difficult to see with an assembly line mindset. 
 
-```javascript
-// Example: A simple function before review
-function add(a, b) {
-    // TODO: Add type checking
-    return a + b;
-}
-```
+## Example 1: Too many authors
 
-Just as an editor helps refine the author's voice, a code reviewer helps improve the quality and robustness of the codebase.
+Using our manufacturing mindset, if we want our development team to release more features our expected through process would be.
 
-## Maintenance and Legacy
+- More features being released = more points being completed in a sprint
+- More points being completed in a sprint = more tickets being complete
+- More tickets being complete = let's assign more engineers to the project
 
-A published book might receive updates in future editions, correcting typos or adding forewords. Similarly, software requires ongoing maintenance: fixing bugs, adding features, adapting to new environments. Both creations leave a legacy, impacting readers or users long after the initial creation process is complete.
+On paper, this make sense. Increase the input and increase the output. And from an engineer's perspective why wouldn't you want some more help? In practice however once a project reaches 3-4 engineers this scaling starts to fall apart. 
 
-Thinking of software engineering through the lens of writing can provide valuable insights into the importance of planning, iteration, collaboration, and long-term vision. Both are crafts that require dedication, skill, and a willingness to continuously learn and improve.
+Returning to the writing analogy, it's common to add co-authors to assist in the writing processes. However imagine adding 3, 4 or even 5 authors to a book. We would quickly run into problems:
+
+- **Consistency** - Each author added is a different voice and perspective of the story. Editors must now spend more time ensuring unified tone and structure for every change made. 
+- **Dependency management** - If John changes a key detail in Chapter 4, Bob might unknowingly reference the outdated version in Chapter 23, the chance of this increases as more authors are added making simultaneous changes. Resulting in more overhead coordinating and reviewing changes across multiple authors.
+
+In both cases, the more authors you add, the more critical the editor role becomes. 
+
+In software, the same problems occurs with code. However, it is usually the case that an engineer for a project is **both** author as well editor. Both committing code as well as conducting code reviews for fellow engineers. This effectively means that for every engineer you add to a project, you are trading coding time of all the existing engineers in exchange for more code review and coordination time. 
+
+> It's easy to start with a team of authors and end up with a team of editors
+
+This can very quickly reach an inflection point where engineers spend more time making sure changes are consistent and coherent with one another than actually building out the features. A stark difference to how our manufacturing mindset would look at the problem.
+
+Before you add more engineers to a project, first consider what the *actual* bottlenecks are. Is it really a lack of people, or are processes and communication overhead eating into development time? Especially as the manufacturing mindset encourages that maturing products = more mature and heavy handed process. Do you need more engineers, or would support roles such as customer solutioning or user feedback facilitation free up engineers to focus on quality development time?
+
+This idea is explored in [The Mythical Man-Month](https://en.wikipedia.org/wiki/The_Mythical_Man-Month), which introduces Brook's law: *Adding manpower to a late software project makes it later*
+
+## Conclusion and followups
