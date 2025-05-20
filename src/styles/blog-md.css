@@ -11,6 +11,10 @@
     color: #e5e5e5;
 }
 
+.prose a {
+    color: var(--color-primary);
+}
+
 .prose h1,
 .prose h2,
 .prose h3,
