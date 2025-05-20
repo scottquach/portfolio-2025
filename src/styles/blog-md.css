@@ -15,6 +15,10 @@
     color: var(--color-primary);
 }
 
+.prose strong {
+    color: var(--color-primary);
+}
+
 .prose h1,
 .prose h2,
 .prose h3,
