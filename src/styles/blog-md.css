@@ -3,8 +3,12 @@
     font-weight: 500;
 } */
 
-.prose p {
+.prose {
     font-size: 18px;
+}
+
+.prose :not(h1, h2, h3, h4, h5, h6) {
+    color: #e5e5e5;
 }
 
 .prose h1,
@@ -53,12 +57,11 @@
     padding-left: 1rem;
     border-left: 2px solid black;
     color: #2f3843;
-    /* font-style: italic; */
 }
 
 /* Dark mode blockquote */
 .dark .prose blockquote {
-    border-left: 2px solid #acacac;
+    border-left: 2px solid var(--color-primary);
     color: #acacac;
 }
 
@@ -113,6 +116,6 @@
     content: "•";
     position: absolute;
     left: 0;
-    color: var(--accent-color);
+    color: var(--color-primary);
     font-weight: bold;
 }
