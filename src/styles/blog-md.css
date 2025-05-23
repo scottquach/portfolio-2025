@@ -7,7 +7,7 @@
     font-size: 18px;
 }
 
-.prose :not(h1, h2, h3, h4, h5, h6) {
+.prose .dark :not(h1, h2, h3, h4, h5, h6) {
     color: #e5e5e5;
 }
 
