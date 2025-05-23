@@ -2,7 +2,7 @@
 status: published
 category: software
 title: What Writing a Book Can Teach Us About Software Projects
-date: "2024-05-19"
+date: "2025-05-19"
 ---
 
 Building software products is hard. Building software products that people actually use is even harder.
