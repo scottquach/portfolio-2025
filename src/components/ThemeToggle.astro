@@ -1,0 +1,63 @@
+<button id="theme-toggle" aria-label="Toggle theme">
+    <i class="fas fa-moon text-base"></i>
+    <!-- Moon icon for light mode -->
+    <i class="fas fa-sun text-base" style="display: none;"></i>
+    <!-- Sun icon for dark mode -->
+</button>
+
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const moonIcon = themeToggle?.querySelector('.fa-moon') as HTMLElement | null;
+    const sunIcon = themeToggle?.querySelector('.fa-sun') as HTMLElement | null;
+
+    function setTheme(isDark: boolean) {
+        document.body.classList.toggle('dark', isDark);
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        if (moonIcon && sunIcon) {
+            moonIcon.style.display = isDark ? 'none' : 'inline-block';
+            sunIcon.style.display = isDark ? 'inline-block' : 'none';
+        }
+    }
+
+    // Initialize theme based on saved preference or system setting
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme) {
+        setTheme(savedTheme === 'dark');
+    } else {
+        setTheme(prefersDark);
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const isDark = document.body.classList.contains('dark');
+            setTheme(!isDark);
+        });
+    }
+
+    // Listen for system theme changes if no preference is saved
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+        if (!localStorage.getItem('theme')) {
+            setTheme(event.matches);
+        }
+    });
+</script>
+
+<style>
+    #theme-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--text-color); /* Uses CSS variable for color */
+        opacity: 0.5; /* Added to make the toggle less noticeable */
+    }
+
+    /* Hide the toggle on screens smaller than 768px (typical mobile breakpoint) */
+    @media (max-width: 767px) {
+        #theme-toggle {
+            display: none;
+        }
+    }
+</style>
+

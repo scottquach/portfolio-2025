@@ -1,5 +1,6 @@
 ---
 import Posthog from '../components/Posthog.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
 import '../styles/global.css';
 const { title = 'Scott Quach' } = Astro.props;
 ---
@@ -29,26 +30,6 @@ const { title = 'Scott Quach' } = Astro.props;
 
         <meta name="author" content="Scott Quach" />
         <title>{title}</title>
-        <script>
-            function setTheme(isDark: boolean) {
-                document.body.classList.toggle('dark', isDark);
-            }
-
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-            if (savedTheme) {
-                setTheme(savedTheme === 'dark');
-            } else {
-                setTheme(prefersDark);
-            }
-
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
-                if (!localStorage.getItem('theme')) {
-                    setTheme(event.matches);
-                }
-            });
-        </script>
         <script src="https://kit.fontawesome.com/35c30d0dea.js" crossorigin="anonymous"></script>
 
         <!-- Preconnect to External Resources -->
@@ -90,6 +71,9 @@ const { title = 'Scott Quach' } = Astro.props;
         </script>
     </head>
     <body>
+        <div style="position: fixed; top: 1rem; right: 1rem; z-index: 999;">
+            <ThemeToggle />
+        </div>
         <slot />
         <Posthog />
         <!-- <Footer /> -->
