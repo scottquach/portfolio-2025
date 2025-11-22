@@ -2,7 +2,7 @@
 status: published
 category: software
 title: How this site works
-date: "2024-04-22"
+date: "2025-04-22"
 ---
 
 > Personal websites are your plot of real estate for the web
