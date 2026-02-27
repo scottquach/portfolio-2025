@@ -7,9 +7,9 @@ date: "2026-02-26"
 
 When people ask me how I am so productive, it is often through the lens of building systems to get the most things done in a week.
 
-This is certainly how I thought about productivity coming out of college, where I had spent the last four years focused on completing as many assignments as quickly as possible. And while there is something to be said for this lens of productivity in school and work, when it comes to thinking about our lives as a whole, those four thousand weeks we have to live, I believe it misleads us into spending time on tasks that feel important and keep us busy, while not actually moving the needle toward the life we want.
+This is certainly how I thought about productivity coming out of college where I had spent the last four years focused on completing as many assignments as quickly as possible. And while there is something to be said for this lens of productivity in school and work, when it comes to thinking about our lives as a whole, those four thousand weeks we have to live, I believe it misleads us into spending time on tasks that feel important and keep us busy, while not actually moving the needle toward the life we want.
 
-In this blog I'll share my system for focusing less on filling my day with tasks, and instead on ensuring that I always have the big picture in mind. How productivity comes from fewer but compounding tasks, rather than by chasing the number of things we get done.
+In this blog I'll share my system for focusing less on filling my day with tasks and instead on ensuring that I always have the big picture in mind. How productivity comes from fewer but compounding tasks, rather than by chasing the number of things we get done.
 
 # How I keep the big picture in frame
 
@@ -21,13 +21,13 @@ Using a linear calendar, I highlight days/weeks across month boundaries as time 
 
 Within a linear calendar this gives me a clear visual that for the time period some of my finite time and energy will be spent pursuing this focus.
 
-That isn't the only thing I've time-blocked across March and April. I've also blocked weeks for editing and publishing photos, and milestone periods for building new features on my next indie app. The purpose of visually dedicating time on a linear calendar is to see where I've overcommitted across overlapping efforts and to gauge whether I'm spending too much time on goals that aren't worth it. This is a routine I've found works best in this visual linear calendar format as it becomes easy to pull it up and get an entire year view.
+That isn't the only thing I've time-blocked across March and April. I've also blocked weeks for editing and publishing photos, and milestone periods for building new features on my next indie app. The purpose of visually dedicating time on a linear calendar is to see where I've overcommitted across overlapping efforts and to gauge whether I'm spending too much time on goals that aren't worth it. This is a routine I've found works best in this visual linear calendar format as it becomes way easier to pull up and get an entire year view.
 
 Why not use a regular calendar? Calendars get cluttered with your everyday life events. Appointments, birthday reminders, meeting invites. Your linear calendar is a place to focus on _you_ and the big picture of how you want to spend your life, and should be treated as a more sacred place than your traditional calendar. I use Birdseye as a companion to my appointment calendar and not a replacement.
 
 # How I turn the big picture into my week
 
-Now that I have a big picture idea of the focus for the coming months I need to actually turn these ideas into things I'll actually do, and more specifically things worth doing because they work towards something and not because it feels productive to be busy.
+Now that I have a big picture idea of the focus for the coming months I need to actually turn these ideas into things I'll actually do. More specifically things worth doing because they work towards a life goal and not because it feels productive to be busy.
 
 For that I organize not by the day but by the week.
 
@@ -39,13 +39,13 @@ I now instead rely on weekly notes and weekly plans. Starting every Sunday I ope
 - [ ] Launch dark mode and GCal edit support for Birdseye
 - [ ] Write "My Productivity Stack" article and publish to blog
 
-By keeping the main focus of the week to just three things, you are forced to really think and make sure that those three things actually matter and it helps eliminate the act planning to do more things just for the sake that you can. I've found that three big things a week will very quickly build progress to something when compounded over months, and eventually years.
+By keeping the main focus of the week to just three things, you are forced to really think and make sure that those three things actually matter and it helps eliminate planning to do more things just for the sake of it. I've found that three big things a week will very quickly build progress to something when compounded over months, and eventually years.
 
 > Goals you can complete will compound, goals you fail to reach will be forgotten
 
-For breaking down smaller tasks from those three big things into my actual week I previously was I was an avid Todoist fan, and before that TickTick. And while those apps are well made and feature rich, I always felt drowned in the need to tag and use all the fancy features for organizing my tasks when really I just needed to know the 2 or 3 important things for that day.
+For breaking down my three big things into smaller tasks I previously was an avid fan of Todoist, and before that TickTick. And while those apps are well made and feature rich, I always felt drowned in the need to tag and use all the fancy features for organizing my tasks when really I just needed to know the 2 or 3 important things for that day.
 
-I eventually created and now daily [Someday](https://apps.apple.com/us/app/someday-weekly-planner/id6754586557)as a simple no frills weekly planner with built-in flows to make it easy to reschedule things across the week. There's no time of day planning or crazy reminder system, just a "here are the 2 things to do Monday".
+I eventually created and now daily [Someday](https://apps.apple.com/us/app/someday-weekly-planner/id6754586557) as a no frills weekly planner with built-in flows to make it easy to reschedule things across the week. There's no time of day planning or crazy reminder system, just a "here are the 2 things to do Monday".
 
 Within Someday, I don't plan out individual tasks for the entire week. Instead, I assign tasks for just the few days following the weekly review. As I get close to finishing those tasks, I plan out the next few days against the three big things for the week, continuing the cycle until the week is over and it's time for another weekly review. I've found that trying to plan every day a week in advance easily falls apart as soon as something impromptu comes up, you have a busy day, or you just feel tired and need a do-nothing day.
 
